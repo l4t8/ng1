@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/index.css" rel="stylesheet">
+
+    <link href="styles/form.css" rel="stylesheet">
+    <title>Grupo 1º Scout Santiago el Mayor</title>
+</head>
+<body>
+    
+    <header>
+
+
+        <a href="#"><img class = "logo" src="./images/flordelis.jpg" ></a>
+        
+        <div class ="titlediv">
+            <p class = "title">Grupo Scout 1 Santiago el Mayor</p>
+            <p class="subtitle">HACIENDO ESCULTISMO DESDE 1950</p>
+        </div>
+
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar">Menu</label>
+
+
+        <nav class ="navbar">
+
+            <ul>
+
+                <li><a href="index.html">CONÓCENOS</a></li>
+                <li><a href="#">UNIDADES</a></li>
+                <li><a href="#">DOCUMENTOS</a></li>
+                <li><a href="#">CONTÁCTANOS</a></li>
+            
+            </ul>
+
+        </nav>
+
+        <div class ="socialwrapper">
+            <a target="_blank"href="https://www.instagram.com/g1.scout/"><img class ="socialmedia"src="images/instagram.png"></a>
+            <a target="_blank"href="https://www.facebook.com/Grupo1SantiagoelMayor/?locale=es_ES"><img class ="socialmedia"src="images/facebook.png"></a>
+        </div>
+
+    </header>
+
+    <div class = "space"></div>
+
+    <div class = "introwrapper">
+
+        <img class ="introimg" src="images/slide2.jpg">
+
+
+        <div class = "intro">
+
+            <p>
+                ¡Hola!<br>Somos el <span class ="blue">Grupo 1 Santiago El Mayor</span>, un 
+                grupo scout de la ciudad de Madrid que lleva haciendo Escultismo desde hace más de 75 años.
+            </p>
+            <p>
+                Nacimos en 1950 como una sociedad de excursionistas, y aunque hemos evolucionado mucho desde
+                entonces como <span class ="black">asociación sin ánimo de lucro</span>, algo que no ha cambiado 
+                es nuestras ganas de lanzarnos al campo cada fin de semana para <span class="black">disfrutar de
+                la naturaleza y del aire libre mientras</span>
+                <span class="black">nos educamos en valores</span> a través de juegos y dinámicas.</p>
+            <p>
+                Estamos gestionados por un equipo
+                voluntario de jóvenes monitores/as de Ocio y Tiempo libre que se encargan, entre muchas 
+                cosas, de programar <span class="black">actividades cada fin de semana</span> de octubre a junio 
+                <span class="black">y dos campamentos
+                al año</span>, uno de cinco días en Semana Santa y otro de quince días en la segunda quincena 
+            de julio.</p>
+            <p>
+                ¿Y para quiénes hacemos todo esto? Para <span class="black">niños/as, adolescentes y jóvenes de 6 a 
+                18 años</span> divididos por generaciones, con quienes trabajamos las dinámicas de grupo, la 
+                adquisición de responsabilidades, la autonomía, la empatía y alimentamos sus ganas de
+                divertirse, de crecer personalmente y de llevar a cabo todo aquello que se propongan.
+            </p>
+        </div>
+
+    </div>
+
+    <p class = "textunidades">Conoce a las unidades</p>
+
+
+
+    <h1>Formulario de inscripción</h1>
+
+    <div class = "formbox">
+
+        <img src="/images/formulario.jpeg">
+
+        <form action="https://formspree.io/f/xzblgyzn" method = "POST">
+            <input type="text" name = "Nombre" placeholder ="Nombre" required>
+            <input type="text" name = "Apellido" placeholder ="Apellido" required>
+            <input type="email" name = "Correo electrónico" placeholder ="Correo electrónico" required>
+            <textarea cols="60" rows="5" name ="Mensaje del interesado" placeholder="Explíquenos por qué quiere entrar en el grupo" required></textarea>
+            <button type="submit" target = "_blank">Enviar el formulario</button>
+        </form>
+    </div>
+</body>
+</html>

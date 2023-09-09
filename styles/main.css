@@ -1,0 +1,193 @@
+:root{
+    --marino-x: #111c54;
+}
+
+@font-face {
+    font-family: 'Title';
+    src: url(../fonts/poppins-semibold-webfont.woff2) format('woff2');
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'Subtitles';
+    src: url(../fonts/poppins-regular-webfont.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Text';
+    src: url(../fonts/poppins-light-webfont.woff2) format('woff2');
+}
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: var(--marino-x);
+    font-family: 'Subtitles';
+
+}
+
+.space{
+    height: 200px;
+}
+
+header{
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    background: white;
+    border-bottom: 2px solid var(--marino-x);
+    padding: 0px 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+
+header .logo{
+    height: 180px;
+    left: 0;
+    padding: 0px;
+    margin: 0px;
+}
+
+header .subtitle{
+    font-size: 21px;
+}
+
+header .title{
+    display: initial;
+    padding-left: 0%;
+    font-size: 28px;
+    font-family: 'Title';
+}
+
+header a .socialmedia{
+    width: 50px;
+    height: auto;
+    padding-left: 20px;
+    box-shadow: 0px 0px 0px 0px;
+}
+
+header .socialwrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+header .titlediv{
+    color: #111c54;
+}
+
+header .navbar ul{
+    list-style: none;
+}
+
+header .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+header .navbar ul li a{
+    font-size: 20px;
+    padding: 20px;
+    display: block;
+}
+
+header .navbar ul li a:hover{
+    background: white;
+    color: aqua;
+    transition: 0.3s;
+}
+
+header .navbar ul li ul{
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: #111c54;
+    display: none;
+}
+
+header .navbar ul li ul li{
+    width: 100%;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul{
+    display: initial;
+    transition: 0.3s;
+}
+
+#menu-bar{
+    display: none;
+}
+
+header label{
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+@media (max-width:991px) {
+    
+    header{
+        padding: 20px;
+    }
+
+    header .logo{
+        height: 140px;
+        width: auto;
+        left: 0;
+    }
+
+    header label{
+        display: initial;
+        padding-right: 20px;
+        padding-left: 60px;
+    }
+
+    header .mobiletitle{
+        display: initial;
+        color: white;
+        font-weight: 600;
+        padding-left: 10px;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    header .desktoptitle{
+        display: none;
+        
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: #111c54;
+        border-top:1px solid rgba(0,0,0,.1);
+        display: none;
+    }
+
+    header .navbar ul li{
+        width: 100%;
+    }
+
+    header .navbar ul li ul{
+        position: relative;
+        width: 100%;
+    }
+
+    header .navbar ul li ul li{
+        background: #111c54;
+        
+    }
+
+    #menu-bar:checked ~ .navbar{
+        display: initial;
+    }
+
+
+}
