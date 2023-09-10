@@ -1,25 +1,24 @@
-h1{
-    color: black;
-    padding-top: 30px;
-    text-align: center;
-    font-size: 45px;
+:root{
+    --leftmargin-x: 100px;
+    --form-width: 80%;
 }
 
 input{
     background-color: white;
-    width: 70%;
-    margin-left: 4%;
+    width: var(--form-width);
+    margin-left: var(--leftmargin-x);
     font-size: 20px;
     padding: 16px 16px;
     border-radius: 10px;
     border-color: 10px;
     margin-bottom: 20px;
+    
 }
 
 textarea{
     background-color: white;
-    width: 70%;
-    margin-left: 4%;
+    width: var(--form-width);
+    margin-left: var(--leftmargin-x);
     font-size: 20px;
     padding: 16px 16px;
     border-radius: 10px;
@@ -47,9 +46,11 @@ button{
     border-color: black;
     font-size: 22px;
     padding: 10px 18px;
+
     text-align: center;
-    display: flex;
-    margin-left: 27%;
+    overflow: hidden;
+    margin-left: var(--leftmargin-x);
+    width: var(--form-width);
 }
 
 button:hover{
@@ -58,14 +59,23 @@ button:hover{
 }
 
 .formbox{
-    margin-top: 50px;
+    margin-top: 30px;
     display: flex;
     flex-direction: row;
-    margin-left: 10%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
 }
 
 div img{
     height: 600px;
     width: auto;
     box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, 0.5)
+}
+
+iframe{
+    box-shadow:  0px -1px 16px 0px rgba(0,0,0,0.75);
+    margin-left: 20px;
 }

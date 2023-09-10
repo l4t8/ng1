@@ -1,0 +1,15 @@
+:root{
+    --leftmargin-x: 100px;
+}
+
+.wrapperunidades{
+    display: flex;
+    flex-direction: row;
+    margin-top: 80px;
+    margin-left: var(--leftmargin-x);
+}
+
+.wrapperunidades ul{
+    display: flex;
+    flex-direction: row;
+}

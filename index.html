@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles/main.css" rel="stylesheet">
     <link href="styles/index.css" rel="stylesheet">
-
+    <link href="styles/unidades.css" rel="stylesheet">
     <link href="styles/form.css" rel="stylesheet">
     <title>Grupo 1º Scout Santiago el Mayor</title>
 </head>
@@ -14,12 +14,12 @@
     <header>
 
 
-        <a href="#"><img class = "logo" src="./images/flordelis.jpg" ></a>
+        <a href="index.html"><img class = "logo" src="./images/flordelis.jpg" ></a>
         
-        <div class ="titlediv">
+        <a href="index.html"><div class ="titlediv">
             <p class = "title">Grupo Scout 1 Santiago el Mayor</p>
             <p class="subtitle">HACIENDO ESCULTISMO DESDE 1950</p>
-        </div>
+        </div></a>
 
         <input type="checkbox" id="menu-bar">
         <label for="menu-bar">Menu</label>
@@ -81,15 +81,20 @@
 
     </div>
 
-    <p class = "textunidades">Conoce a las unidades</p>
+    <p class = "heading">Conoce a las unidades</p>
+
+    <ul class ="wrapperunidades">
+        <a href=""><img src="" alt="Castores"></a>
+        <a href=""><img src="" alt="Manada"></a>
+        <a href=""><img src="" alt="Tropa"></a>
+        <a href=""><img src="" alt="Esculta"></a>
+        <a href=""><img src="" alt="Castores"></a>
+    </ul>
 
 
-
-    <h1>Formulario de inscripción</h1>
+    <p class ="heading">Escríbenos</h1>
 
     <div class = "formbox">
-
-        <img src="/images/formulario.jpeg">
 
         <form action="https://formspree.io/f/xzblgyzn" method = "POST">
             <input type="text" name = "Nombre" placeholder ="Nombre" required>
@@ -98,6 +103,18 @@
             <textarea cols="60" rows="5" name ="Mensaje del interesado" placeholder="Explíquenos por qué quiere entrar en el grupo" required></textarea>
             <button type="submit" target = "_blank">Enviar el formulario</button>
         </form>
+
+        <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d
+        759.0439977338024!2d-3.7015222303459088!3d40.449241598214634!2m3!1f0
+        !2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228ff2f66ef37%3A0x701
+        a7e949d31bb9b!2sC.%20de%20Oviedo%2C%2011%2C%2028020%20Madrid!5e0!3m2
+        !1ses!2ses!4v1694338517276!5m2!1ses!2ses" width="800" height="500" 
+        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        
     </div>
+
+    <div class ="bluespace"></div>
 </body>
 </html>

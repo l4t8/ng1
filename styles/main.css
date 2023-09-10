@@ -31,6 +31,8 @@
     height: 200px;
 }
 
+
+
 header{
     position: absolute;
     top: 0; left: 0; right: 0;
@@ -129,6 +131,11 @@ header label{
     display: none;
 }
 
+.bluespace{
+    margin-top: 50px;
+    height: 200px;
+    background-color: #21008b;
+}
 
 
 @media (max-width:991px) {
